@@ -46,7 +46,8 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'angelica' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000000" width="32" height="32"></button>
+			
 			<?php
 			wp_nav_menu(
 				array(

@@ -139,8 +139,15 @@ add_action( 'widgets_init', 'angelica_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+
+/* echo "<div>";
+echo filemtime(get_template_directory() . "/style.css");
+echo "</div>"; */
+
 function angelica_scripts() {
-	wp_enqueue_style( 'angelica-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'angelica-style', get_stylesheet_uri(), array(), filemtime(get_template_directory() . "/style.css") );
+	wp_enqueue_style( 'angelica-google-fon', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,700&display=swap',false);
+
 	wp_style_add_data( 'angelica-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'angelica-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

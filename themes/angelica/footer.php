@@ -16,7 +16,8 @@
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'angelica' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'angelica' ), 'WordPress' );
+				//printf( esc_html__( 'Proudly powered by %s', 'angelica' ), 'WordPress' );
+				
 				?>
 			</a>
 			<span class="sep"> | </span>

@@ -8,4 +8,33 @@
 			"main"
 			"footer";
 	}
+	
+}
+
+/* 
+#page .site
+	#masthead .site-header (entete de la page)
+		.site-branding
+			.site-title
+				.site-description
+		#site-navigation .main-navigation
+	#primary .site-main (section principal de la page)
+	#colophon .site-footer
+
+*/
+
+.site-branding, #primary, #colophon{
+	margin: 0 0 0 3rem;
+}
+
+.site-footer, #colophon{
+	background-color: red;
+	width: 100vw;
+	color: white;
+	margin: 0;
+	padding-left: 25%;
+	@include media-desktop {
+        padding-left: 35%;
+		
+    }
 }
