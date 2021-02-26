@@ -2,9 +2,16 @@ body.home{
     height: 100vh;
     width: 100vw;
     background-color:#fff;
+    overflow-x: hidden;
     //margin:0;
     //padding:0;
     //background-color:bleu;
+}
+
+.home{
+    #primary{
+        width: 100vw;
+    }
 }
 
 body.home::after {

@@ -2,6 +2,7 @@
 	display: block;
 	width: 100%;
 	background-color: rgb(230, 20, 20);
+	border:2px solid red;
 	padding: 20px;
 	
 
@@ -94,20 +95,20 @@
 /* Small menu. */
 .menu-toggle {
 	padding: 0;
-	transform: rotate(0deg);
-	transition: transform .25s;
+	//transform: rotate(0deg);
+	//transition: transform .25s;
 	border: none;
     outline: 0px;
-	overflow: hidden;
+	//overflow: hidden;
 	background: none;
 }
 
-.main-navigation.toggled .menu-toggle{
+/* .main-navigation.toggled .menu-toggle{
 	transform: rotate(90deg);
 
 	
 	
-}
+} */
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;

@@ -145,12 +145,21 @@ echo filemtime(get_template_directory() . "/style.css");
 echo "</div>"; */
 
 function angelica_scripts() {
-	wp_enqueue_style( 'angelica-style', get_stylesheet_uri(), array(), filemtime(get_template_directory() . "/style.css") );
+	wp_register_style( 'angelica-style', get_stylesheet_uri(), array(), filemtime(get_template_directory() . "/style.css") );
+	wp_enqueue_style( 'angelica-style');
+
 	wp_enqueue_style( 'angelica-google-fon', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,700&display=swap',false);
 
 	wp_style_add_data( 'angelica-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'angelica-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_register_script( 'angelica-carrousel', get_template_directory_uri() . '/js/carrousel.js', array(), filemtime(get_template_directory() . "/js/carrousel.js"), true );
+
+	wp_enqueue_script( 'angelica-burger', get_template_directory_uri() . '/js/burger.js', array(), filemtime(get_template_directory() . "/js/burger.js"), true );
+
+	if( is_front_page()){
+        wp_enqueue_script( 'angelica-carrousel');
+    }
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

@@ -1,3 +1,24 @@
 [20-Feb-2021 02:00:05 UTC] PHP Warning:  Use of undefined constant footer - assumed 'footer' (this will throw an Error in a future version of PHP) in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/footer.php on line 20
 [20-Feb-2021 02:00:05 UTC] PHP Notice:  Undefined variable: color__linksite in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/footer.php on line 20
 [20-Feb-2021 02:00:05 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/footer.php on line 20
+[22-Feb-2021 15:54:13 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/header.php on line 76
+[25-Feb-2021 22:04:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_eregister_script() in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/functions.php:158
+Stack trace:
+#0 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/class-wp-hook.php(287): angelica_scripts('')
+#1 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/script-loader.php(2004): do_action('wp_enqueue_scri...')
+#4 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/class-wp-hook.php(287): wp_enqueue_scripts('')
+#5 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#7 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/general-template.php(3005): in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/functions.php on line 158
+[25-Feb-2021 22:04:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_eregister_script() in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/functions.php:158
+Stack trace:
+#0 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/class-wp-hook.php(287): angelica_scripts('')
+#1 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/script-loader.php(2004): do_action('wp_enqueue_scri...')
+#4 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/class-wp-hook.php(287): wp_enqueue_scripts('')
+#5 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#7 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/general-template.php(3005): in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/functions.php on line 158
