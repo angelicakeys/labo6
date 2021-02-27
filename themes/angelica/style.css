@@ -1150,18 +1150,51 @@ body.home::after {
   justify-content: center;
   align-items: center;
   width: 100vw;
+  margin-bottom: 10px;
 }
 
 .carrousel div:nth-of-type(1) {
   background-color: #f76161;
+  font-family: "Montserrat bold", sans-serif;
+  font-size: 3em;
+  color: whitesmoke;
 }
 
 .carrousel div:nth-of-type(2) {
   background-color: #61d9f7;
+  font-family: "Montserrat bold", sans-serif;
+  font-size: 3em;
+  color: whitesmoke;
 }
 
 .carrousel div:nth-of-type(3) {
   background-color: #c861f7;
+  font-family: "Montserrat bold", sans-serif;
+  font-size: 3em;
+  color: whitesmoke;
+}
+
+.Boutons {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+button#un, button#deux, button#trois {
+  align-content: space-between;
+  align-items: center;
+  border: none;
+  outline: 0px;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #61d9f7;
+}
+
+button#un:hover, button#deux:hover, button#trois:hover {
+  background-color: red;
+  font-family: "Montserrat bold", sans-serif;
+  font-size: 1em;
 }
 
 /* local burger

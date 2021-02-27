@@ -55,9 +55,11 @@
 
 			</section>
 		<?php endif ?>
+		<div class="Boutons">
 			<button id='un'>1</button> 
 			<button id='deux'>2</button> 
 			<button id='trois'>3</button>
+		</div>
 			
 		<!--CAROUSSEL ---------------------------------->
 		<nav id="site-navigation" class="main-navigation">

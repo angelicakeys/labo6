@@ -15,6 +15,7 @@
 				bout1.addEventListener('mousedown', function (){
 				
 					carrousel.style.transform = "translateX(0)"
+					
 				})
 
 				bout2.addEventListener('mousedown', function (){

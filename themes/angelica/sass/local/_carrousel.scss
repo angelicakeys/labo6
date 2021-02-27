@@ -10,21 +10,60 @@
         justify-content: center;
         align-items: center;
         width: 100vw;
+        margin-bottom: 10px;
       
 
         &:nth-of-type(1){
             background-color: rgb(247, 97, 97);
+            font-family: "Montserrat bold", sans-serif;
+            font-size: 3em;
+            color: whitesmoke;
         }
 
         &:nth-of-type(2){
             background-color: rgb(97, 217, 247);
+            font-family: "Montserrat bold", sans-serif;
+            font-size: 3em;
+            color: whitesmoke;
         }
 
         &:nth-of-type(3){
             background-color: rgb(200, 97, 247);
+            font-family: "Montserrat bold", sans-serif;
+            font-size: 3em;
+            color: whitesmoke;
         }
     }
 
+   
+
     
+}
+
+.Boutons{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+button#un ,  button#deux,  button#trois {
+    
+    align-content: space-between;
+    align-items: center;
+   // border: 3px solid blue;
+    border: none;
+    outline: 0px;
+	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    background-color: rgb(97, 217, 247);
+    
+}
+
+button#un:hover ,  button#deux:hover,  button#trois:hover{
+
+    background-color: red;
+    font-family: "Montserrat bold", sans-serif;
+    font-size: 1em;
 }
 
