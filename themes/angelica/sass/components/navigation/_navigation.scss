@@ -2,8 +2,8 @@
 	display: block;
 	width: 100%;
 	background-color: rgb(230, 20, 20);
-	border:2px solid red;
 	padding: 20px;
+	
 	
 
 
@@ -96,6 +96,8 @@
 .menu-toggle {
 	padding: 0;
 	//transform: rotate(0deg);
+	transition: transform .25s;
+	transform: scale(1);
 	//transition: transform .25s;
 	border: none;
     outline: 0px;
@@ -103,12 +105,13 @@
 	background: none;
 }
 
-/* .main-navigation.toggled .menu-toggle{
-	transform: rotate(90deg);
-
-	
-	
-} */
+ .main-navigation.toggled .menu-toggle{
+	//transform: rotate(90deg);
+	transform: scale(1.5) rotate(90deg);
+	background-color: rgb(0, 0, 0);
+	margin-bottom: 20px;
+   
+} 
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -152,3 +155,4 @@ _______________________________________________________ */
 		flex: 1 0 50%;
 	}
 }
+
