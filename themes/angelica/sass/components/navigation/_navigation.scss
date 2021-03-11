@@ -44,14 +44,28 @@
 			left: 0;
 		
 		}
+		a[href='#']::after{
+			position: absolute;
+			content: "+";
+			width: 100%;
+			height: 100%;
+			top:0;
+			bottom: 0;
+			left: 90%;
+			right: 0;
+		}
 
+		li.focus a[href='#']::after,
+		a[href='#']:hover::after{
+			content: "-";
+		}
 
 	}
 
 	li {
 		position: relative;
-	 flex : 1;
-
+	 //flex : 1;
+	
 		&:hover > a,
 		&.focus > a {
 		}
@@ -64,6 +78,8 @@
 		text-decoration: none;
 		padding: .5rem;
 	}
+
+	
 
 	.current_page_item > a,
 	.current-menu-item > a,
@@ -117,15 +133,20 @@ menu tablet
 		display: flex;
 		position : static;
 		justify-content: space-around;
+		a[href='#']::after{
+			display: none;
+		}
 
 	li:hover ul {
 		display: block;
+		position: absolute;
 		width: 400px;
 		height: 500px;
 	}
 
 	ul{
 		display: none;
+		
 	}
 
 
