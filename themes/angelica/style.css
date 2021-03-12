@@ -705,7 +705,7 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
   display: block;
-  width: 100vw;
+  width: 100%;
 }
 
 .main-navigation ul {
@@ -763,6 +763,11 @@ textarea {
   position: relative;
 }
 
+.main-navigation li:hover > a,
+.main-navigation li.focus > a {
+  background-color: #8b2121;
+}
+
 .main-navigation a {
   display: block;
   text-decoration: none;
@@ -774,6 +779,8 @@ Bouton burger
 ------------------------------------------------------------------------------*/
 .menu-toggle {
   padding: 0;
+  transition: transform .25s;
+  transform: scale(1);
   border: 0;
 }
 
@@ -791,11 +798,17 @@ Bouton burger
   transform: scale(0.99);
 }
 
-/*
-.main-navigation.toggled .menu-toggle{
-	transform : rotate(90deg);
+.main-navigation.toggled .menu-toggle {
+  transform: scale(1.5) rotate(90deg);
+  background-color: black;
+  margin-bottom: 20px;
 }
-*/
+
+.menu-toggle {
+  margin-left: 25px;
+  background-color: #e09393;
+}
+
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
