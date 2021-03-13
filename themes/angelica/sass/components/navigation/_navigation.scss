@@ -46,7 +46,7 @@
 		}
 		a[href='#']::after{
 			position: absolute;
-			content: "+";
+			content: "\25C6";
 			width: 100%;
 			height: 100%;
 			top:0;
@@ -57,7 +57,7 @@
 
 		li.focus a[href='#']::after,
 		a[href='#']:hover::after{
-			content: "-";
+			content: "\25C7";
 		}
 
 	}
@@ -154,6 +154,7 @@ menu tablet
 		position: absolute;
 		width: 400px;
 		height: 500px;
+		
 	}
 
 	ul{

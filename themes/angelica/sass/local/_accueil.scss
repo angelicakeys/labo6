@@ -47,17 +47,22 @@ body.home::after {
     font-weight: bold;
     font-size: clamp(1.2rem, #{"-0.875rem + 8.33vw"}, 4rem);
     margin-bottom: 0;
+   
 
     a{
         text-decoration: none;
     }
+
+
 }
 
 .site-description{
     margin-top: 0;
     font-family: $font__sitetitle;
     font-weight: normal;
-    font-size: clamp(.6rem, #{"-0.875rem + 8.33vw"}, 2rem);
+    /* font-size: clamp(.6rem, #{"-0.875rem + 8.33vw"}, 2rem); */
+    font-size: clamp(.6rem, #{"-0.875rem + 8.33vw"}, 1rem); 
+     
 } 
 
 
@@ -80,7 +85,7 @@ body.home::after {
 }
 
 .entry-title{
-    font-size: 5rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 
