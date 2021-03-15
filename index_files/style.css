@@ -1135,7 +1135,6 @@ body.home::after {
   font-weight: bold;
   font-size: clamp(1.2rem, -0.875rem + 8.33vw, 4rem);
   margin-bottom: 0;
-  width: 100vw;
 }
 
 .site-title a {
@@ -1148,7 +1147,6 @@ body.home::after {
   font-weight: normal;
   /* font-size: clamp(.6rem, -0.875rem + 8.33vw, 2rem); */
   font-size: clamp(0.6rem, -0.875rem + 8.33vw, 1rem);
-  width: 100vw;
 }
 
 .accueil ul {
