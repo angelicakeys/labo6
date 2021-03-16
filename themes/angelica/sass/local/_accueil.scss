@@ -114,19 +114,28 @@ body.home::after {
         display: flex;
         flex-direction: column;
       
-        justify-content: space-between;
+       // justify-content: space-between;
+       justify-content: center;
         align-items: center;
         border: 2px solid red;
+        //border-radius:70px 20px;
         margin: 10px;
-        width: 35%;
+        
+        width: 70%;
        
     
-      
+        @include media-desktop {
+            width: 35%;
+            justify-content: space-between;
+            margin-left: 80px;
+        }
        
      
         p{
             margin: .3rem;
             font-size: 1rem;
+            padding: 30px;
+          
            
         }
         a{
@@ -138,5 +147,9 @@ body.home::after {
     }
 
 }
+}
+
+article:hover{
+    background-color: rgba(122, 177, 214, 0.644);
 }
 

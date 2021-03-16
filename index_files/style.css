@@ -1188,22 +1188,35 @@ body.home::after {
 .home .cours .sectionDiv article {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border: 2px solid red;
   margin: 10px;
-  width: 35%;
+  width: 70%;
+}
+
+@media (min-width: 40rem) {
+  .home .cours .sectionDiv article {
+    width: 35%;
+    justify-content: space-between;
+    margin-left: 80px;
+  }
 }
 
 .home .cours .sectionDiv article p {
   margin: .3rem;
   font-size: 1rem;
+  padding: 30px;
 }
 
 .home .cours .sectionDiv article a {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
+}
+
+article:hover {
+  background-color: rgba(122, 177, 214, 0.644);
 }
 
 /* local carrousel
