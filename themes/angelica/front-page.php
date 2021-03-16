@@ -22,6 +22,7 @@ get_header();
 			</header><!-- .page-header -->
 
 			<section class="cours">
+			<section class="sectionDiv">
 			<?php
 			/* Start the Loop */
             $precedent = 0;
@@ -37,26 +38,25 @@ get_header();
                 //$contenu = (get_the_content());
                // $resume = substr($contenu, 0, 200);
 				$typeCours = get_field('type_de_cours');
-                
+               
             ?>
-
+	
 				<article>
 				<p><?php echo $sigle . " . "  . $typeCours; ?> </p>
 				<a href="<?php echo get_permalink()?>"><?php echo $titrePartiel;?></a>
 				<p> Section :<?php echo $session ?> </p>
 
 				</article>
-
+				
           
-            <?php
-			endwhile;?>
-
+			
+            <?php endwhile;?>
+			</section>
 		
-
 		
 	</section> <!-- fin de section cours -->
 		<?php endif;?>
-		?>
+		
 
 	</main><!-- #main -->
 

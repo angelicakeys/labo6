@@ -1175,23 +1175,33 @@ body.home::after {
 .home .cours {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
-.home .cours article {
+.home .cours .sectionDiv {
+  flex-wrap: wrap;
+  display: flex;
+  background-color: beige;
+  flex-direction: row;
+}
+
+.home .cours .sectionDiv article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   border: 2px solid red;
+  margin: 10px;
+  width: 35%;
 }
 
-.home .cours article p {
+.home .cours .sectionDiv article p {
   margin: .3rem;
   font-size: 1rem;
 }
 
-.home .cours article a {
-  font-size: 2rem;
+.home .cours .sectionDiv article a {
+  font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
 }

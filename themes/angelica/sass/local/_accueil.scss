@@ -95,22 +95,48 @@ body.home::after {
 
 
 .home .cours{
-    display: flex;
+   display: flex;
     flex-direction: column;
+ margin: 0;
+
+  
+  .sectionDiv{
+  flex-wrap: wrap;
+  //width: 30vw;
+   display: flex;
+   background-color: beige;
+   flex-direction: row;
+ 
+   
+ 
+   
     article{
         display: flex;
         flex-direction: column;
+      
         justify-content: space-between;
         align-items: center;
         border: 2px solid red;
+        margin: 10px;
+        width: 35%;
+       
+    
+      
+       
+     
         p{
             margin: .3rem;
             font-size: 1rem;
+           
         }
         a{
-            font-size: 2rem;
+            //font-size:2rem; prof
+            font-size: 1.5rem;
             font-weight: bold;
             text-decoration: none;
         }
     }
+
 }
+}
+
