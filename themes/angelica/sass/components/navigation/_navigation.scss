@@ -23,21 +23,27 @@
 			transition: left .5s;
 			left: -999em;
 			z-index: 99999;
-			background-color: aqua;
-		
+			//background-color: aqua;
+			background-color: rgb(53, 145, 114);
 
-			li {
-				/* a{
+			li:hover{
+				transform: translateX(20px);
+				transition: transform .25s;
+				width: auto;
+				overflow-x: hidden;
+				a{
 				padding-left: 20px;
+			} 
 			
-				
-				} */
+			//position:absolute;
+			
 
 			}
 
 
 			a {
 				width: 100%;
+			
 			}
 
 
@@ -47,6 +53,7 @@
 		li.focus > ul {
 			left: 0;
 			border: 2px solid red;
+		
 		}
 		a[href='#']::after{
 			position: absolute;
@@ -62,6 +69,14 @@
 		li.focus a[href='#']::after,
 		a[href='#']:hover::after{
 			content: "\25C7";
+			
+		}
+
+		a[href='#']:hover{
+			//background-color: rgb(139, 97, 173);
+			background-color: rgb(10, 196, 134);
+			
+		
 		}
 
 	}
@@ -70,11 +85,15 @@
 		position: relative;
 		background-color: rgb(52, 209, 157);
 		
+		
 		flex : 1; /* prend tout le padding du a*/
 	
 		&:hover > a,
 		&.focus > a {
-			background-color: rgb(139, 97, 173);
+			//background-color: rgb(139, 97, 173);
+			//background-color: rgb(178, 157, 196);
+			background-color: rgb(53, 145, 114);
+			
 		
 		}
 
@@ -167,7 +186,7 @@ menu tablet
 		display: block;
 		position: absolute;
 		//width: 250px;
-		width: auto;
+		width: auto;/*permet de s'adapter la dernière session 6*/
 		height: auto;/* pas de marge en bas */
 		
 	}

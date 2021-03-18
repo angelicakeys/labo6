@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: angelica
 Theme URI: http://underscores.me/
@@ -548,7 +549,7 @@ a:hover, a:active {
 }
 
 .main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active {
-  color: #04cdff;
+  color: #fff;
 }
 
 .main-navigation a:focus {
@@ -729,15 +730,18 @@ textarea {
   transition: left .5s;
   left: -999em;
   z-index: 99999;
-  background-color: aqua;
+  background-color: #359172;
 }
 
-.main-navigation ul ul li {
-  /* a{
-				padding-left: 20px;
-			
-				
-				} */
+.main-navigation ul ul li:hover {
+  transform: translateX(20px);
+  transition: transform .25s;
+  width: auto;
+  overflow-x: hidden;
+}
+
+.main-navigation ul ul li:hover a {
+  padding-left: 20px;
 }
 
 .main-navigation ul ul a {
@@ -766,6 +770,10 @@ textarea {
   content: "\25C7";
 }
 
+.main-navigation ul a[href='#']:hover {
+  background-color: #0ac486;
+}
+
 .main-navigation li {
   position: relative;
   background-color: #34d19d;
@@ -775,7 +783,7 @@ textarea {
 
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
-  background-color: #8b61ad;
+  background-color: #359172;
 }
 
 .main-navigation a {
@@ -846,6 +854,7 @@ menu tablet
     display: block;
     position: absolute;
     width: auto;
+    /*permet de s'adapter la dernière session 6*/
     height: auto;
     /* pas de marge en bas */
   }
