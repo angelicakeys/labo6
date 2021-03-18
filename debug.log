@@ -52,3 +52,4 @@ Stack trace:
 [15-Mar-2021 13:34:54 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'extraire_cours_front_page' not found or invalid function name in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/class-wp-hook.php on line 292
 [15-Mar-2021 13:34:54 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'extraire_cours_front_page' not found or invalid function name in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/class-wp-hook.php on line 292
 [15-Mar-2021 14:37:13 UTC] PHP Parse error:  syntax error, unexpected '$typeCours' (T_VARIABLE), expecting ';' or ',' in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php on line 43
+[18-Mar-2021 19:02:57 UTC] PHP Parse error:  syntax error, unexpected '!=' (T_IS_NOT_EQUAL) in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php on line 43

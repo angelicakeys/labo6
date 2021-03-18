@@ -17,6 +17,8 @@ get_header();
 
 	<main id="primary" class="site-main">
 
+	
+
 		<?php
 		if ( have_posts() ) :
 
@@ -25,8 +27,11 @@ get_header();
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
+
 				<?php
 			endif;
+
+			
 
 			/* Start the Loop */
 			while ( have_posts() ) :

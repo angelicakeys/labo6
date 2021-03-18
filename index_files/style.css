@@ -707,11 +707,12 @@ textarea {
 .main-navigation {
   display: block;
   width: 100%;
+  z-index: 11000;
 }
 
 .main-navigation ul {
   display: none;
-  position: absolute;
+  /* position : absolute; */
   width: 100%;
   list-style: none;
   margin: 0;
@@ -724,7 +725,6 @@ textarea {
 
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
   position: absolute;
   top: 100%;
   transition: left .5s;
@@ -734,14 +734,16 @@ textarea {
 }
 
 .main-navigation ul ul li:hover {
-  transform: translateX(20px);
-  transition: transform .25s;
+  /* 	transform: translateX(20px);
+				transition: transform .25s; */
   width: auto;
   overflow-x: hidden;
 }
 
 .main-navigation ul ul li:hover a {
   padding-left: 20px;
+  transform: translateX(20px);
+  transition: transform .25s;
 }
 
 .main-navigation ul ul a {
@@ -759,7 +761,7 @@ textarea {
   content: "\25C6";
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 25%;
   bottom: 0;
   left: 90%;
   right: 0;
@@ -781,8 +783,7 @@ textarea {
   /* prend tout le padding du a*/
 }
 
-.main-navigation li:hover > a,
-.main-navigation li.focus > a {
+.main-navigation li:hover, .main-navigation li.focus {
   background-color: #359172;
 }
 
@@ -857,6 +858,7 @@ menu tablet
     /*permet de s'adapter la dernière session 6*/
     height: auto;
     /* pas de marge en bas */
+    width: 400px;
   }
   .main-navigation.toggled ul li:hover ul:nth-of-type(8),
   .main-navigation ul li:hover ul:nth-of-type(8) {
@@ -1127,6 +1129,10 @@ body.home {
   overflow-x: hidden;
 }
 
+body.home #primary {
+  margin: 0;
+}
+
 .home #primary {
   width: 100vw;
 }
@@ -1203,16 +1209,17 @@ body.home::after {
   display: flex;
   flex-direction: column;
   margin: 0;
+  /* .sectionDiv{ */
 }
 
-.home .cours .sectionDiv {
+.home .cours section {
   flex-wrap: wrap;
   display: flex;
   background-color: beige;
   flex-direction: row;
 }
 
-.home .cours .sectionDiv article {
+.home .cours section article {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1223,20 +1230,22 @@ body.home::after {
 }
 
 @media (min-width: 40rem) {
-  .home .cours .sectionDiv article {
-    width: 35%;
-    justify-content: space-between;
-    margin-left: 80px;
+  .home .cours section article {
+    /*   width: 35%; */
+    /*  justify-content: space-between; */
+    /*  margin-left: 80px; */
+    margin: 1%;
+    width: 29%;
   }
 }
 
-.home .cours .sectionDiv article p {
+.home .cours section article p {
   margin: .3rem;
   font-size: 1rem;
   padding: 30px;
 }
 
-.home .cours .sectionDiv article a {
+.home .cours section article a {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -1254,6 +1263,7 @@ article:hover {
   display: flex;
   transition: transform .5s;
   transform: translateX(0);
+  z-index: 1;
 }
 
 .carrousel div {
@@ -1291,6 +1301,10 @@ article:hover {
   align-content: space-between;
   gap: 30px;
   margin-bottom: 10px;
+}
+
+input {
+  background-color: #61d9f7;
 }
 
 button#un, button#deux, button#trois {
