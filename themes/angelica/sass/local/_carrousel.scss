@@ -11,8 +11,9 @@
         align-items: center;
         width: 100vw;
         margin-bottom: 10px;
-      
-
+        height: 45vh;
+       
+        
         &:nth-of-type(1){
             background-color: rgb(247, 97, 97);
             font-family: "Montserrat bold", sans-serif;
@@ -45,7 +46,10 @@
     justify-content: center;
     align-content: space-between;
     gap: 30px;
-    margin-bottom: 10px;
+    margin-top: 210px;
+    @include media-desktop {
+        margin-top: 210px;
+    }
 }
 
 input{

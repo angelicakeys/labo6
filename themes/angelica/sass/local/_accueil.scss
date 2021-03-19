@@ -9,12 +9,22 @@ body.home{
     //margin:0;
     //padding:0;
     //background-color:bleu;
+  
 }
 
 .home{
     #primary{
         width: 100vw;
+
+        .site-main{
+            .page-header{
+                .page-title h1{
+                    color: blue;
+                }
+            }
+        }
     }
+
 }
 
 
@@ -27,9 +37,7 @@ body.home::after {
     bottom: 0;
     left: 0;
     right: 0;
-    //background-color:#fff;
-   
-    //clip-path: polygon(100% 61%, 68% 100%, 100% 100%);
+  
 
 
     @include media-desktop {
@@ -71,6 +79,7 @@ body.home::after {
 
 
 .accueil{
+ 
     ul{
         list-style-type: none;
         font-size: clamp(1.2rem, #{"-0.875rem + 8.33vw"}, 0.5rem);
@@ -97,20 +106,34 @@ body.home::after {
     height: 50px
 }
 
-
+/********** SECTION ARTICLES *************/
 .home .cours{
    display: flex;
     flex-direction: column;
     margin: 0;
 
+h2{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(52, 209, 157);
+    color: white;
+   // border-radius: 80px 0px 80px 0px;
+    height: 15vh;
+    align-items: center;
+    margin-top: 70px;
+    @include media-desktop {
+       
+        margin: 50px;
+        align-items: center;
+        margin-top: 150px;
+    } 
+}
   
-  /* .sectionDiv{ */
-    section{
-  flex-wrap: wrap;
-  //width: 30vw;
-   display: flex;
-   background-color: beige;
-   flex-direction: row;
+section{
+    flex-wrap: wrap;
+    display: flex;
+    background-color: beige;
+    flex-direction: row;
  
    
  
