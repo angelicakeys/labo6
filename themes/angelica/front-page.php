@@ -74,10 +74,12 @@ get_header();
 		
 	
 				<article>
+					<div class="divArticle">
 				<p><?php echo $sigle . " . "  . $typeCours; ?> </p>
 				<a href="<?php echo get_permalink()?>"><?php echo $titrePartiel;?></a>
 				<p> Section :<?php echo $session ?> </p>
-
+				
+				</div>
 				</article>
 				
           

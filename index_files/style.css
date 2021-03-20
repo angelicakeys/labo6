@@ -527,7 +527,7 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #4169e1;
+  color: #fff;
 }
 
 a:visited {
@@ -1134,10 +1134,6 @@ body.home #primary {
   width: 100vw;
 }
 
-.home #primary .site-main .page-header .page-title h1 {
-  color: blue;
-}
-
 body.home::after {
   position: absolute;
   width: 100%;
@@ -1162,11 +1158,6 @@ body.home::after {
     background-color: #afd3fc;
     height: 200%;
   }
-}
-
-.site-title h1 {
-  background-color: blue;
-  color: white;
 }
 
 .site-title {
@@ -1239,17 +1230,18 @@ body.home::after {
 .home .cours section {
   flex-wrap: wrap;
   display: flex;
-  background-color: beige;
   flex-direction: row;
+  justify-content: center;
+  background-color: #afd3fc;
 }
 
 .home .cours section article {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  border: 2px solid red;
+  border: 2px transparent #3c4e64;
   margin: 10px;
+  box-shadow: 5px 10px 15px #7b99bd;
   width: 70%;
 }
 
@@ -1273,12 +1265,61 @@ body.home::after {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
+  /* display: flex;
+            justify-content: center;
+            align-items: center; */
 }
 
-article:hover {
-  background-color: rgba(122, 177, 214, 0.644);
+.divArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.divArticle a {
+  align-items: center;
+}
+
+.divArticle:hover {
+  background-color: #4a85d3;
+  width: 100%;
+  height: 100%;
+  animation: animArticle .25s both;
+}
+
+.divArticle:hover a {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+@keyframes animArticle {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transform: translateX(-100px);
+  }
+  50% {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
+    transform: translateX(50px);
+  }
+  65% {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    transform: translateX(110px);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transform: translateX(0px);
+  }
+}
+
+/* .divArticle {
+    animation : animArticle $duree both;
+}  */
+/* .divArticle:hover::before{
+
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 51%, 0% 0%);
+} */
 /* local carrousel
 --------------------------------------------- */
 .carrousel {
