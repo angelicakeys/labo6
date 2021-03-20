@@ -34,9 +34,22 @@ get_header();
 			</section>
 	
 		<div class="Boutons">
-			<input type="radio" id='un'>1</button> 
-			<button id='deux'>2</button> 
-			<button id='trois'>3</button>
+			<div id='un'>
+			<input type="radio"></input> 
+			1
+			</div>
+			<div id='deux'>
+			<input type="radio"></input>
+			2
+			</div>
+			<div id='trois'>
+			<input type="radio"></input>
+			3
+			</div>
+			<!-- <button id='un'>1</button>  -->
+			<!-- <button id='deux'>2</button>  -->
+			<!-- <button id='trois'>3</button> -->
+			
 		</div>
 			
 		<!--CAROUSSEL ---------------------------------->

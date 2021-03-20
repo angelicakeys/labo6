@@ -52,12 +52,8 @@
     }
 }
 
-input{
-    
-   // display: none;
-    background-color: rgb(97, 217, 247);
-}
-button#un ,  button#deux,  button#trois {
+
+/* button#un ,  button#deux,  button#trois {
    
     align-content: space-between;
     align-items: center;
@@ -67,14 +63,53 @@ button#un ,  button#deux,  button#trois {
 	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     background-color: rgb(97, 217, 247);
     
-}
+} */
 
-button#un:hover ,  button#deux:hover,  button#trois:hover{
+/* button#un:hover ,  button#deux:hover,  button#trois:hover{
 
     background-color: red;
     font-family: "Montserrat bold", sans-serif;
     font-size: 1em;
 }
 
+ */
 
+ 
 
+/* button{
+    align-content: space-between;
+    align-items: center;
+   // border: 3px solid blue;
+    border: none;
+    outline: 0px;
+	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    background-color: rgb(97, 217, 247);
+   
+} */
+//////////////////////////////ESSAI/////////////////////
+input{
+  
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid blue;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+div#un, div#deux , div#trois{
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: column;/*place les boutons au dessus des chiffres*/
+   // border: 3px solid blue;
+    border: none;
+    outline: 0px;
+	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    background-color: rgb(97, 217, 247);
+    //width: 40px;
+    width: 60px;
+    padding-top: 20px;
+}
+
+div#un:hover, div#deux:hover , div#trois:hover{
+    background-color: red;
+}

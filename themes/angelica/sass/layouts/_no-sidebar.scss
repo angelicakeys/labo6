@@ -30,13 +30,16 @@
 
 
 .site-footer, #colophon{
-	background-color: red;
+	display: flex;
+	justify-content: center;
+	flex: 1;
+	background-color: rgb(74, 133, 211);
 	width: 100vw;
+
 	color: white;
 	margin: 0;
-	padding-left: 25%;
-	@include media-desktop {
-        padding-left: 35%;
-		
-    }
+	.site-info{
+		padding-top: 15px;
+	}
+	
 }
