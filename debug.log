@@ -53,3 +53,12 @@ Stack trace:
 [15-Mar-2021 13:34:54 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'extraire_cours_front_page' not found or invalid function name in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/class-wp-hook.php on line 292
 [15-Mar-2021 14:37:13 UTC] PHP Parse error:  syntax error, unexpected '$typeCours' (T_VARIABLE), expecting ';' or ',' in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php on line 43
 [18-Mar-2021 19:02:57 UTC] PHP Parse error:  syntax error, unexpected '!=' (T_IS_NOT_EQUAL) in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php on line 43
+[21-Mar-2021 03:27:26 UTC] PHP Notice:  Undefined variable: titrePartiel in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php on line 30
+[21-Mar-2021 03:30:18 UTC] PHP Notice:  Undefined variable: titrePartiel in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php on line 30
+[21-Mar-2021 04:14:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_page_the_title() in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php:31
+Stack trace:
+#0 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/4w4-conceptionWeb/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php on line 31

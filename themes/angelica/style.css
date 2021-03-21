@@ -1413,30 +1413,33 @@ body.home::after {
    
 } */
 input {
+  padding-top: 0px;
   flex-direction: column;
   align-items: center;
-  border: 3px solid blue;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  justify-content: center;
 }
 
-div#un, div#deux, div#trois {
+label#un, label#deux, label#trois {
   display: flex;
-  align-content: space-between;
   align-items: center;
   flex-direction: column;
-  /*place les boutons au dessus des chiffres*/
-  border: none;
-  outline: 0px;
+  justify-content: center;
+  background-color: #1f95b3;
+  padding: 5px;
+  /** essai **/
+  width: 25px;
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  background-color: #61d9f7;
-  width: 60px;
-  padding-top: 20px;
 }
 
-div#un:hover, div#deux:hover, div#trois:hover {
-  background-color: red;
+input:not(:checked) {
+  display: none;
 }
 
+/* div#un:hover, div#deux:hover , div#trois:hover{
+    background-color: red;
+    display: none;
+} */
+/***** ESSAI *************************/
 /* local burger
 --------------------------------------------- */
 /* --------------------------------------------------------------------------------------

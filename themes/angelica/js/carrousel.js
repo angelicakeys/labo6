@@ -1,6 +1,8 @@
 
 (function(){
 
+	
+	
 	let bout1 = document.getElementById('un')
 	console.log(bout1.id)
 	let bout2= document.getElementById('deux')
@@ -13,7 +15,7 @@
 	bout1.addEventListener('mousedown', function (){
 	
 		carrousel.style.transform = "translateX(0)"
-		
+	
 	})
 
 	bout2.addEventListener('mousedown', function (){
@@ -26,8 +28,18 @@
 		
 	})
 
+	
+	
+	
+	
 
-			
+
+	
+	
+	
+
+		
+	
 		
 
     }())

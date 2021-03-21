@@ -24,33 +24,62 @@ get_header();
 				?>
 			
 
-			<!--CAROUSSEL ---------------------------------->
+		<!--CAROUSSEL ---------------------------------->
 		
 		<section class="carrousel">
-			<div>1 </div>
-			<div>2 </div>
-			<div>3 </div>
 
-			</section>
+		<!-- DIV 1 ---------------------------------->
+			<div> 
+			<?php 
+			$my_id =48;
+			$page_id = get_post($my_id);
+			$content = $page_id->post_content;
+			//echo substr($content, 0, 150);  
+			
+			?>
+			<a href="<?php echo get_permalink($my_id)?>"> Création Vidéo</a> 
+			</div>
+		<!-- DIV 2 ---------------------------------->
+			<div>
+			<?php $my_id =54;
+			$page_id = get_post($my_id);
+			$content = $page_id->post_content;	
+			?>
+			<a href="<?php echo get_permalink($my_id)?>"> Animation Intéractivité Web</a> 
+			</div>
+		<!-- DIV 3 ---------------------------------->
+			<div> 
+			<?php $my_id =64;
+			$page_id = get_post($my_id);
+			$content = $page_id->post_content;	
+			?>
+			<a href="<?php echo get_permalink($my_id)?>"> Animation 3D</a>
+			</div>
+			
+
+		</section>
 	
 		<div class="Boutons">
-			<div id='un'>
-			<input type="radio"></input> 
-			1
-			</div>
-			<div id='deux'>
+			<label id='un'>
+			<input  type="radio" checked></input> 
+		
+		
+		</label>
+			<label id='deux'>
 			<input type="radio"></input>
-			2
-			</div>
-			<div id='trois'>
+			
+			
+		</label>
+			<label id='trois'>
 			<input type="radio"></input>
-			3
-			</div>
+		
+
+		</label>
 			<!-- <button id='un'>1</button>  -->
 			<!-- <button id='deux'>2</button>  -->
 			<!-- <button id='trois'>3</button> -->
 			
-		</div>
+		</div><!-- fin de class boutons -->
 			
 		<!--CAROUSSEL ---------------------------------->
 
