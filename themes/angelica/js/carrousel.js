@@ -15,17 +15,18 @@
 	bout1.addEventListener('mousedown', function (){
 	
 		carrousel.style.transform = "translateX(0)"
-	
+		carrousel.style.opacity +1;
 	})
 
 	bout2.addEventListener('mousedown', function (){
 		carrousel.style.transform = "translateX(-100vw)"
-		
+		carrousel.style.opacity +1;
 	})
 
 	bout3.addEventListener('mousedown', function (){
 		carrousel.style.transform = "translateX(-200vw)"
-		
+		carrousel.style.opacity +1;
+	
 	})
 
 	

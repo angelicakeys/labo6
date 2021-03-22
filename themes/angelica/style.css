@@ -1353,6 +1353,10 @@ body.home::after {
   color: whitesmoke;
 }
 
+.carrousel div a {
+  text-decoration: none;
+}
+
 /*Container de l'ensemble des boutons*/
 .Boutons {
   display: flex;
