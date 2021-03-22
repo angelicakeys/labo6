@@ -62,3 +62,21 @@ Stack trace:
 #2 /Applications/MAMP/htdocs/4w4-conceptionWeb/index.php(17): require('/Applications/M...')
 #3 {main}
   thrown in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php on line 31
+[22-Mar-2021 01:18:18 UTC] PHP Warning:  file_get_contents(images/animation3d.jpg): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php on line 42
+[22-Mar-2021 01:21:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function animation3d_encode() in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php:42
+Stack trace:
+#0 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/4w4-conceptionWeb/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php on line 42
+[22-Mar-2021 01:22:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function animation3d_encode() in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php:42
+Stack trace:
+#0 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/4w4-conceptionWeb/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php on line 42
+[22-Mar-2021 01:24:00 UTC] PHP Warning:  file_get_contents(images/animation3d.jpg): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php on line 42
+[22-Mar-2021 01:24:54 UTC] PHP Warning:  file_get_contents(animation3d.jpg): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php on line 42
+[22-Mar-2021 01:38:00 UTC] PHP Notice:  Undefined variable: size in /Applications/MAMP/htdocs/4w4-conceptionWeb/wp-content/themes/angelica/front-page.php on line 42

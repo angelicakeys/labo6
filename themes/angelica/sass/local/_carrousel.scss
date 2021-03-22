@@ -19,6 +19,10 @@
             font-family: "Montserrat bold", sans-serif;
             font-size: 3em;
             color: whitesmoke;
+            img{
+                width: 100vw;
+                height: 60vh;
+            }
         }
 
         &:nth-of-type(2){
@@ -41,6 +45,7 @@
     
 }
 
+/*Container de l'ensemble des boutons*/
 .Boutons{
     display: flex;
     justify-content: center;
@@ -52,76 +57,23 @@
     }
 }
 
-
-/* button#un ,  button#deux,  button#trois {
-   
-    align-content: space-between;
-    align-items: center;
-   // border: 3px solid blue;
-    border: none;
-    outline: 0px;
-	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    background-color: rgb(97, 217, 247);
-    
-} */
-
-/* button#un:hover ,  button#deux:hover,  button#trois:hover{
-
-    background-color: red;
-    font-family: "Montserrat bold", sans-serif;
-    font-size: 1em;
-}
-
- */
-
- 
-
-/* button{
-    align-content: space-between;
-    align-items: center;
-   // border: 3px solid blue;
-    border: none;
-    outline: 0px;
-	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    background-color: rgb(97, 217, 247);
-   
-} */
-//////////////////////////////ESSAI/////////////////////
+//////////////////////////////BOUTONS RADIOS/////////////////////
  input{
   padding-top: 0px;
     flex-direction: column;
     align-items: center;
-    //border: 3px solid blue;
-    //clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     justify-content: center;
 }
  
 label#un, label#deux , label#trois{
     display: flex;
-    //align-content: space-between;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    //border: none;
-  
-    
-   // outline: 0px;
-	//clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     background-color: rgb(31, 149, 179);
-    
-  
     padding: 5px;
-
-    /** essai **/
-   // border-radius: 50%;
     width: 25px;
-   
-  
-    //border: 2px solid #444;
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-   
-  
-   // margin-left: 20px;
 } 
 
 
@@ -129,11 +81,3 @@ input:not(:checked){
     display: none;
 }
 
-
-
-/* div#un:hover, div#deux:hover , div#trois:hover{
-    background-color: red;
-    display: none;
-} */
-
-/***** ESSAI *************************/

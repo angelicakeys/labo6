@@ -37,7 +37,9 @@ get_header();
 			//echo substr($content, 0, 150);  
 			
 			?>
-			<a href="<?php echo get_permalink($my_id)?>"> Création Vidéo</a> 
+			
+			
+			<a href="<?php echo get_permalink($my_id)?>"> Création vidéo</a> 
 			</div>
 		<!-- DIV 2 ---------------------------------->
 			<div>

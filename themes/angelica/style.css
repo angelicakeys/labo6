@@ -1171,33 +1171,6 @@ body.home::after {
   text-decoration: none;
 }
 
-.site-description {
-  margin-top: 0;
-  font-family: "montserrat", monospace;
-  font-weight: normal;
-  /* font-size: clamp(.6rem, -0.875rem + 8.33vw, 2rem); */
-  font-size: clamp(0.6rem, -0.875rem + 8.33vw, 1rem);
-}
-
-.accueil ul {
-  list-style-type: none;
-  font-size: clamp(1.2rem, -0.875rem + 8.33vw, 0.5rem);
-}
-
-.accueil img {
-  display: block;
-  border-radius: 150px 0 150px 0;
-  margin-right: 45px;
-  height: 200px;
-  width: 50%;
-  padding: 3rem;
-}
-
-.entry-title {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
-
 .site-footer {
   height: 50px;
 }
@@ -1207,8 +1180,6 @@ body.home::after {
   display: flex;
   flex-direction: column;
   margin: 0;
-  /**** TEST COULEUR PAR SECTION******/
-  /**************/
 }
 
 .home .cours h2 {
@@ -1227,14 +1198,6 @@ body.home::after {
     align-items: center;
     margin-top: 150px;
   }
-}
-
-.home .cours section:nth-of-type(3) {
-  background-color: #ab8be7;
-}
-
-.home .cours section:nth-of-type(3) article {
-  box-shadow: 5px 10px 15px #7f39db;
 }
 
 .home .cours section {
@@ -1257,9 +1220,6 @@ body.home::after {
 
 @media (min-width: 40rem) {
   .home .cours section article {
-    /*   width: 35%; */
-    /*  justify-content: space-between; */
-    /*  margin-left: 80px; */
     margin: 1%;
     width: 29%;
   }
@@ -1275,11 +1235,9 @@ body.home::after {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  /* display: flex;
-            justify-content: center;
-            align-items: center; */
 }
 
+/*permet d'avoir un fond pour le hover et on peut voir les titres des cours aussi*/
 .divArticle {
   display: flex;
   flex-direction: column;
@@ -1355,6 +1313,11 @@ body.home::after {
   color: whitesmoke;
 }
 
+.carrousel div:nth-of-type(1) img {
+  width: 100vw;
+  height: 60vh;
+}
+
 .carrousel div:nth-of-type(2) {
   background-color: #61d9f7;
   font-family: "Montserrat bold", sans-serif;
@@ -1369,6 +1332,7 @@ body.home::after {
   color: whitesmoke;
 }
 
+/*Container de l'ensemble des boutons*/
 .Boutons {
   display: flex;
   justify-content: center;
@@ -1383,35 +1347,6 @@ body.home::after {
   }
 }
 
-/* button#un ,  button#deux,  button#trois {
-   
-    align-content: space-between;
-    align-items: center;
-   // border: 3px solid blue;
-    border: none;
-    outline: 0px;
-	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    background-color: rgb(97, 217, 247);
-    
-} */
-/* button#un:hover ,  button#deux:hover,  button#trois:hover{
-
-    background-color: red;
-    font-family: "Montserrat bold", sans-serif;
-    font-size: 1em;
-}
-
- */
-/* button{
-    align-content: space-between;
-    align-items: center;
-   // border: 3px solid blue;
-    border: none;
-    outline: 0px;
-	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    background-color: rgb(97, 217, 247);
-   
-} */
 input {
   padding-top: 0px;
   flex-direction: column;
@@ -1426,7 +1361,6 @@ label#un, label#deux, label#trois {
   justify-content: center;
   background-color: #1f95b3;
   padding: 5px;
-  /** essai **/
   width: 25px;
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
@@ -1435,11 +1369,6 @@ input:not(:checked) {
   display: none;
 }
 
-/* div#un:hover, div#deux:hover , div#trois:hover{
-    background-color: red;
-    display: none;
-} */
-/***** ESSAI *************************/
 /* local burger
 --------------------------------------------- */
 /* --------------------------------------------------------------------------------------
