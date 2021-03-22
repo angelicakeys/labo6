@@ -34,11 +34,7 @@ get_header();
 			$my_id =48;
 			$page_id = get_post($my_id);
 			$content = $page_id->post_content;
-			//echo substr($content, 0, 150);  
-			
 			?>
-			
-			
 			<a href="<?php echo get_permalink($my_id)?>"> Création vidéo</a> 
 			</div>
 		<!-- DIV 2 ---------------------------------->
@@ -74,12 +70,7 @@ get_header();
 		</label>
 			<label id='trois'>
 			<input type="radio"></input>
-		
-
 		</label>
-			<!-- <button id='un'>1</button>  -->
-			<!-- <button id='deux'>2</button>  -->
-			<!-- <button id='trois'>3</button> -->
 			
 		</div><!-- fin de class boutons -->
 			
@@ -89,7 +80,6 @@ get_header();
 			</header><!-- .page-header -->
 
 			<section class="cours">
-			<!-- <section class="sectionDiv"> -->
 			<?php
 			/* Start the Loop */
             $precedent = "XXXXXX";

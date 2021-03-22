@@ -83,7 +83,7 @@ label#un, label#deux , label#trois{
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 } 
 
-
+/* si le bouton n'est pas selectionné il y a pas de radio bouton*/
 input:not(:checked){
     display: none;
 }
