@@ -575,7 +575,7 @@ a:hover, a:active {
 }
 
 .site-title a:hover, .site-title a:focus, .site-title a:active {
-  color: #e40b0b;
+  color: #0a117c;
 }
 
 .site-title a:focus {
@@ -1180,6 +1180,8 @@ body.home::after {
   display: flex;
   flex-direction: column;
   margin: 0;
+  /*entete categorie cours*/
+  /*variatons couleurs dans le header des sections*/
   /*variatons couleurs dans le header des sections*/
 }
 
@@ -1288,6 +1290,7 @@ body.home::after {
   text-align: center;
 }
 
+/*animation des hovers par section de cours*/
 @keyframes animArticle {
   0% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -1390,6 +1393,7 @@ label#un, label#deux, label#trois {
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
+/* si le bouton n'est pas selectionné il y a pas de radio bouton*/
 input:not(:checked) {
   display: none;
 }
