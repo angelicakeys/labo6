@@ -513,7 +513,6 @@ object {
 img {
   height: auto;
   max-width: 100%;
-  border: 3px solid red;
 }
 
 figure {
@@ -1199,6 +1198,26 @@ body.home::after {
     align-items: center;
     margin-top: 150px;
   }
+}
+
+.home .cours h2:nth-of-type(1) {
+  background-color: #4cb383;
+}
+
+.home .cours h2:nth-of-type(2) {
+  background-color: #1da0a0;
+}
+
+.home .cours h2:nth-of-type(3) {
+  background-color: #a0311d;
+}
+
+.home .cours h2:nth-of-type(4) {
+  background-color: #770e4b;
+}
+
+.home .cours h2:nth-of-type(5) {
+  background-color: #171266;
 }
 
 .home .cours section {
