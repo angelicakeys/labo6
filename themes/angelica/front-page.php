@@ -26,53 +26,25 @@ get_header();
 
 		<!--CAROUSSEL ---------------------------------->
 		
-		<section class="carrousel">
+		<!-- <section class="carrousel-2"> -->
 
-		<!-- DIV 1 ---------------------------------->
-			<div> 
-			<?php 
-			$my_id =48;
-			$page_id = get_post($my_id);
-			$content = $page_id->post_content;
-			?>
-			<a href="<?php echo get_permalink($my_id)?>"> Création vidéo</a> 
-			</div>
-		<!-- DIV 2 ---------------------------------->
-			<div>
-			<?php $my_id =54;
-			$page_id = get_post($my_id);
-			$content = $page_id->post_content;	
-			?>
-			<a href="<?php echo get_permalink($my_id)?>"> Animation Intéractivité Web</a> 
-			</div>
-		<!-- DIV 3 ---------------------------------->
-			<div> 
-			<?php $my_id =64;
-			$page_id = get_post($my_id);
-			$content = $page_id->post_content;	
-			?>
-			<a href="<?php echo get_permalink($my_id)?>"> Animation 3D</a>
-			</div>
-			
+		<!-- ARTICLE 1 ---------------------------------->
+		<!-- <article class="slide__conteneur"> -->
+			<!-- <div class="divArticle"> POUR HOVER-->
+		
 
-		</section>
+
+		<!-- ARTICLE 2 ---------------------------------->
 	
-		<div class="Boutons">
-			<label id='un'>
-			<input  type="radio" checked></input> 
+
+
+		<!-- ARTICLE 3 ---------------------------------->
+	
+			
+
+		<!-- </section> -->
+	<!------ BOUTONS ---------------------------------->
 		
-		
-		</label>
-			<label id='deux'>
-			<input type="radio"></input>
-			
-			
-		</label>
-			<label id='trois'>
-			<input type="radio"></input>
-		</label>
-			
-		</div><!-- fin de class boutons -->
 			
 		<!--CAROUSSEL ---------------------------------->
 
@@ -83,48 +55,45 @@ get_header();
 			<?php
 			/* Start the Loop */
             $precedent = "XXXXXX";
+			$chaine_bouton_radio = '';
 			while ( have_posts() ) :
 				the_post();
-                $titre = get_the_title();
 				//582-1W1 Mise en page Web(75h)
-				$sigle = substr($titre, 0,7);
-				$nbHeure = substr($title,-4,3);
-				$titrePartiel = substr($titre,8,-6);
-
-                $session = substr($titre, 4,1);
-                //$contenu = (get_the_content());
-               // $resume = substr($contenu, 0, 200);
-				$typeCours = get_field('type_de_cours');
                
-            	if($typeCours !=$precedent):
-				if("XXXXXX" !=$precedent): ?>
-				</section> 
-				<?php endif?>
-				<h2><?php echo $typeCours ?> </h2>
-				<section>
+               convertir_tableau($tPropriété);
+            	if($tPropriété['typeCours'] != $precedent): 
+				 if("XXXXXX" != $precedent): ?>
+				</section>
+					<?php if($precedent = "Web") : ?>
+				<section class="ctrl-carroussel">
+					<?php echo $chaine_bouton_radio; ?>
+				 </section>
+				 <?php endif;?>
 
-				<?php endif?>
+				<?php endif;?>
+				<h2><?php echo $tPropriété['typeCours'] ?> </h2>
 
-		
-	
-				<article>
-					<div class="divArticle">
-				<p><?php echo $sigle . " . "  . $typeCours; ?> </p>
-				<a href="<?php echo get_permalink()?>"><?php echo $titrePartiel;?></a>
-				<p> Section :<?php echo $session ?> </p>
-				
-				</div>
-				</article>
-				
-          
-			
-            <?php 
-			$precedent = $typeCours;
+			<section <?php echo ($tPropriété['typeCours']=='Web'? 'class="carrousel-2"' :''); ?>>
+			<?php endif?>
+
+			<?php if($tPropriété['typeCours']== "Web"):
+            
+			get_template_part( 'template-parts/content', 'cours-carrousel' );
+			$chaine_bouton_radio .= '<input class="rad-caroussel" type="radio" name="rad-caroussel">';
+			else :
+			get_template_part( 'template-parts/content', 'cours-article' );
+
+			endif;
+			$precedent = $tPropriété['typeCours'];
 			endwhile;?>
 		<!-- 	</section> -->
 		
 		
 	</section> <!-- fin de section cours -->
+	
+	<!-- AJOUT DEUXIEME BOUCLE REPETITION DES ARTICLES -->
+	
+	<!-- AJOUT DEUXIEME BOUCLE REPETITION DES ARTICLES -->
 		<?php endif;?>
 		
 
@@ -133,3 +102,14 @@ get_header();
 <?php
 get_sidebar();
 get_footer();
+
+function convertir_tableau(&$tPropriété){
+	$titre = get_the_title();
+
+	$tPropriété['titre'] = get_the_title();
+	$tPropriété['sigle'] = substr($tPropriété['titre'], 0,7);
+	//$tPropriété['nbHeure'] = substr($title,-4,3);
+	$tPropriété ['titrePartiel'] = substr($tPropriété['titre'],8,-6);
+	$tPropriété['session'] = substr($tPropriété['titre'], 4,1);
+	$tPropriété['typeCours'] = get_field('type_de_cours');
+}

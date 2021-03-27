@@ -1,25 +1,25 @@
 .carrousel{
-    width: 300vw;
+   /*  width: 300vw;
     height: 20vh;
     display: flex;
     transition: transform .5s;
     transform: translateX(0);
-    z-index: 1;
+    z-index: 1; */
 
     div{
-        display: flex;
+      /*   display: flex;
         justify-content: center;
         align-items: center;
         width: 100vw;
         margin-bottom: 10px;
-        height: 45vh;
+        height: 45vh; */
        
         
         &:nth-of-type(1){
-            background-color: rgb(247, 97, 97);
+          /*   background-color: rgb(247, 97, 97);
             font-family: "Montserrat bold", sans-serif;
             font-size: 3em;
-            color: whitesmoke;
+            color: whitesmoke; */
          
             img{
                 width: 100vw;
@@ -28,18 +28,18 @@
         }
 
         &:nth-of-type(2){
-            background-color: rgb(97, 217, 247);
+         /*    background-color: rgb(97, 217, 247);
             font-family: "Montserrat bold", sans-serif;
             font-size: 3em;
-            color: whitesmoke;
+            color: whitesmoke; */
            
         }
 
         &:nth-of-type(3){
-            background-color: #7f86ee;
+          /*   background-color: #7f86ee;
             font-family: "Montserrat bold", sans-serif;
             font-size: 3em;
-            color: whitesmoke;
+            color: whitesmoke; */
          
         }
         a{
@@ -53,7 +53,7 @@
 }
 
 /*Container de l'ensemble des boutons*/
-.Boutons{
+/* .Boutons{
     display: flex;
     justify-content: center;
     align-content: space-between;
@@ -63,16 +63,16 @@
         margin-top: 210px;
     }
 }
-
+ */
 //////////////////////////////BOUTONS RADIOS/////////////////////
- input{
+/*  input{
   padding-top: 0px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
- 
-label#un, label#deux , label#trois{
+  */
+/* label#un, label#deux , label#trois{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -82,9 +82,9 @@ label#un, label#deux , label#trois{
     width: 25px;
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 } 
-
+ */
 /* si le bouton n'est pas selectionné il y a pas de radio bouton*/
-input:not(:checked){
+/* input:not(:checked){
     display: none;
-}
+} */
 
