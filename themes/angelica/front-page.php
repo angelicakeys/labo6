@@ -64,7 +64,7 @@ get_header();
             	if($tPropriété['typeCours'] != $precedent): 
 				 if("XXXXXX" != $precedent): ?>
 				</section>
-					<?php if($precedent = "Web") : ?>
+					<?php if($precedent == "Web") : ?>
 				<section class="ctrl-carroussel">
 					<?php echo $chaine_bouton_radio; ?>
 				 </section>

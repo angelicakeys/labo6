@@ -1179,7 +1179,6 @@ body.home::after {
 .home .cours {
   display: flex;
   flex-direction: column;
-  margin: 0;
   /*entete categorie cours*/
   /*variatons couleurs dans le header des sections*/
   /*variatons couleurs dans le header des sections*/
@@ -1189,37 +1188,58 @@ body.home::after {
   display: flex;
   justify-content: center;
   /* background-color: rgb(52, 209, 157); */
-  color: black;
+  color: white;
   align-items: center;
-  /* margin-top: 70px; */
 }
 
 @media (min-width: 40rem) {
   .home .cours h2 {
-    /*  margin: 50px;
-        align-items: center;
-        margin-top: 150px; */
+    align-items: center;
   }
 }
 
 .home .cours h2:nth-of-type(1) {
   /*  background-color: rgb(76, 179, 131); */
+  color: black;
 }
 
 .home .cours h2:nth-of-type(2) {
   background-color: #1da0a0;
+  margin-top: 70px;
+  padding: 40px;
 }
 
 .home .cours h2:nth-of-type(3) {
   background-color: #a0311d;
+  margin-top: 70px;
+  padding: 40px;
 }
 
 .home .cours h2:nth-of-type(4) {
   background-color: #770e4b;
+  margin-top: 70px;
+  padding: 40px;
 }
 
 .home .cours h2:nth-of-type(5) {
   background-color: #171266;
+  margin-top: 70px;
+  padding: 40px;
+}
+
+.home .cours section:nth-of-type(1) article:nth-of-type(1), .home .cours section:nth-of-type(1) article:nth-of-type(2), .home .cours section:nth-of-type(1) article:nth-of-type(3), .home .cours section:nth-of-type(1) article:nth-of-type(4), .home .cours section:nth-of-type(1) article:nth-of-type(5), .home .cours section:nth-of-type(1) article:nth-of-type(6) {
+  margin: 0px;
+  box-shadow: none;
+}
+
+@media (min-width: 40rem) {
+  .home .cours section:nth-of-type(1) article:nth-of-type(1) .slide, .home .cours section:nth-of-type(1) article:nth-of-type(2) .slide, .home .cours section:nth-of-type(1) article:nth-of-type(3) .slide, .home .cours section:nth-of-type(1) article:nth-of-type(4) .slide, .home .cours section:nth-of-type(1) article:nth-of-type(5) .slide, .home .cours section:nth-of-type(1) article:nth-of-type(6) .slide {
+    margin-right: 500px;
+  }
+}
+
+.home .cours section:nth-of-type(1) article:nth-of-type(1) .slide p, .home .cours section:nth-of-type(1) article:nth-of-type(2) .slide p, .home .cours section:nth-of-type(1) article:nth-of-type(3) .slide p, .home .cours section:nth-of-type(1) article:nth-of-type(4) .slide p, .home .cours section:nth-of-type(1) article:nth-of-type(5) .slide p, .home .cours section:nth-of-type(1) article:nth-of-type(6) .slide p {
+  color: white;
 }
 
 .home .cours section {
@@ -1400,7 +1420,7 @@ body.home::after {
   width: 900vw;
   height: 30vh;
   transition: transform .5s;
-  transform: translate(0);
+  transform: translateX(50);
   flex-wrap: nowrap !important;
 }
 
@@ -1432,6 +1452,7 @@ body.home::after {
 .carrousel-2 .slide__conteneur .slide .slide__info {
   margin: 2%;
   display: flex;
+  width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1447,7 +1468,7 @@ body.home::after {
 }
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(1) {
-  background-color: aqua;
+  background-color: #5b52b1;
 }
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(2) {
